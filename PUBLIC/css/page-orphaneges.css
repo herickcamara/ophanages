@@ -1,0 +1,104 @@
+#page-orphanege {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+}
+
+aside {
+  width: clamp(25rem, 25vw, 44rem);
+  background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
+  padding: clamp(3rem, 4vw, 5rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+aside h2 {
+  margin-top: 6.4rem;
+
+  font: 800 clamp(2rem, 5vw, 3.6rem)/1.1 'nunito'," sans-senrif";
+}
+
+aside p {
+  margin-top: 2.4rem;
+
+  font: 600 1.6rem/1.5 'nunito'," sans-senrif";
+}
+
+aside footer p {
+  margin-top: .8rem;
+}
+
+#mapid {
+  width: 100%;
+  height: 100%;
+
+}
+
+.create-orphanege {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+
+  z-index: 10;
+
+  width: clamp(3.4rem, 5.5vw, 6.4rem);
+  height: clamp(3.4rem, 7vh, 6.4rem);
+  background-color: #15c3D6;
+
+  border: none;
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: .2s;
+  
+}
+.create-orphanege:hover {
+  background-color: #1c78ce;
+}
+
+.leaflet-container{
+  font: 700 2rem/1 'nunito','sans-serif';
+  z-index: 0;
+}
+.leaflet-popup-content {
+  color: #0089A5;
+  font: 700 2rem 'nunito';
+
+  margin: .8rem 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+
+}
+.leaflet-popup-content-wrapper {
+  background: rgba(255,255,255, 0.5);
+  border-radius: 2rem;
+}
+.leaflet-popup-content a {
+  width: 4rem;
+  height: 4rem;
+  background: #15c3d6;
+  box-shadow: 17px 27px 41px rgba(23, 142, 166, .5);
+  border-radius: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: .2s;
+}
+.leaflet-popup-content a:hover{
+  background: #17d6eb;
+}
+.leaflet-popup-tip{
+  display: none;
+}

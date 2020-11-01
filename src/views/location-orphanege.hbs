@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+    HTML
+
+        HYPERTEXT
+            
+            hipertexto
+
+        MARKANP
+
+            marcaçao por <tegs>
+
+        LINGUIGE
+
+                uma linguagen de programaçao
+
+-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localize um orfanato/Happy</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <link rel="icon" href="/images/logo-icon.png">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/aniamation.css">
+    <link rel="stylesheet" href="/css/page-orphaneges.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-orphanege">
+        <aside class="aniamtion-right">
+            <header>
+                <img src="/images/map-marker.svg" alt="Happy">
+                <h2>escolha uma orfanato no map</h2>
+                <p>muitas crianças esperao sua visita ;)</p>
+            </header>
+            <footer>
+                <strong>Cotia-sp</strong>
+                <p>São Paulo</p>
+            </footer>
+        </aside>
+        <div id="mapid" class="aniamtion-apper"></div>
+        <div class="orphanege">
+            {{#each orphanege}}
+                <span hidden 
+                data-id="{{this.id}}" 
+                data-name="{{this.name}}" 
+                data-lat="{{this.lat}}"
+                data-lng="{{this.lng}}"
+                ></span>
+            {{/each}}
+        </div>
+        <a href="/create-orphanege" class="create-orphanege aniamtion-apper" title="cadastre um orfanatos">
+            <img src="/images/plus.svg" alt="criar orfanato">
+        </a>
+    </div>
+    <script src="/script/page-orphanages.js"></script>
+</body>
+
+</html>

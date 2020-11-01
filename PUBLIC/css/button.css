@@ -1,0 +1,68 @@
+.pryme-button {
+  margin-top: 6.4rem;
+  width: 100%;
+  height: 6.4rem;
+  border: none;
+  cursor: pointer;
+  background: #3cdc8c;
+  color: white;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.pryme-button:hover {
+  background: #36cf82;
+}
+.pryme-button img {
+  margin-right: 1.6rem;
+}
+.button_selection{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+.button_selection button {
+  height: 6.4rem;
+  background: #f5f8fa;
+  border: 1px solid #d3e2e5;
+  cursor: pointer;
+  outline: none;
+}
+.button_selection button.buttonone{
+  border-radius:  2rem 0 0 2rem ;
+}
+.button_selection button + button{
+  border-radius: 0 2rem 2rem 0;
+} 
+.button_selection button.active{
+  border: 1px solid #A1E9C5;
+  color: #A1E9C5;
+}
+
+.images button {
+  border: none;
+  border-radius: 0.8rem;
+  background: none;
+  overflow: hidden;
+  cursor: pointer;
+  height: 8.8rem;
+  opacity: 0.5;
+  outline: 0;
+  transition: 0.2s;
+}
+
+.images button.active,
+.images button:hover {
+  opacity: 1;
+}
+
+.images button img {
+  width: 100%;
+  height: 8.8rem;
+  object-fit: cover;
+  border: none;
+  border-radius: 0.8rem;
+}

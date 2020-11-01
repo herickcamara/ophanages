@@ -1,0 +1,45 @@
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes right{
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+@keyframes apper{
+  from {
+    transform: translateY(100%);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
+
+
+.animation-up {
+  animation-name: up;
+  animation-duration: .6s;
+  animation-fill-mode: backwards;
+}
+.aniamtion-right{
+  animation-name: right;
+  animation-duration: 1.8s;
+  transition:2.5s;
+}
+.aniamtion-apper{
+  animation-name: apper;
+  animation-duration: 1.8s;
+  transition:2.5s;
+}
