@@ -1,11 +1,11 @@
 # ophanages
 
-//primeiro projeto no github
+//Primeiro projeto no github
 
-//esta aplicaçao faz com que vc encotre um orfanato mais prosimo de você.
+//Está aplicação faz com que você encotre um orfanato mais próximo de você.
 
 
 
-//aplicaçao nlw#3 rocketsaet
+//aplicação nlw#3 rocketsaet
  
 
