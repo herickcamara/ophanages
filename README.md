@@ -1,4 +1,4 @@
-# ophanages
+# orphanages
 
 Primeiro projeto no github
 
@@ -8,6 +8,6 @@ as tecnologias usadas para front-end foi : " HTML 5, CSS 3, JavaScript" , para B
 
 
 
-//aplicação nlw#3 rocketsaet
+//aplicação nlw#3 rocketseat
  
 
